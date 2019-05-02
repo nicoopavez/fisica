@@ -1,9 +1,9 @@
 
-# Lista de [colaboradores](https://github.com/ofou/fisica/graphs/contributors) ⚡️
+# Lista de [colaboradores](https://github.com/ofou/fisica/graphs/contributors) ⚡️  
 Formato de ingreso colaboradores: - Nombre Apellido1 Apellido2 (@Nombre-de-usuario)
 
 1. Dir. Luis Sepulveda Martinez (@Owllxz)
-2. Dir. Omar Olivares Urrutia (@ofou)
+2. Dir. Omar Olivares Urrutia (@ofou) 
 3. Pablo Luengo Montecino (@DnLaG)
 4. Nataniel Muñoz Sepulveda (@Xero999)
 5. Nicolás Soto Troncoso (@DracoSt)
@@ -25,5 +25,7 @@ Formato de ingreso colaboradores: - Nombre Apellido1 Apellido2 (@Nombre-de-usuar
 21. Bastian Villavicencio Jara (@sk8elite)
 22. Michaol Thomas Moore Retamal (@atonx98)
 23. Dennis Queirolo (@dennis-queirolo )
-24. Felipe Lopez Vergara (felipelopez00)
+24. Mario Labbé (LsMario1998)
+25. Felipe Lopez Vergara (felipelopez00)
+
 
