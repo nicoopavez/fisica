@@ -145,17 +145,17 @@ def conica_de_papus():
     ax = fig.gca(projection='3d')
 
     # Prepare arrays x, y, z
-    t = np.linspace(-9 * np.pi, 9 * np.pi, 100)
+    t = np.linspace(-9 * np.pi, 9 * np.pi, 2000)
 
     a1 = 30
 
-    a = 50
+    a = 15
     z = a1 * np.cos(a) * t
     r = z ** 2 + 1
     x = a1 * np.sin(a) * t * np.cos(t)
     y = a1 * np.sin(a) * t * np.sin(t)
 
-    ax.plot(x, y, z, label='Curva Paramétrica de Ejemplo')
+    ax.plot(x, y, z, label='espiral conica de papus')
     ax.legend()
 
     plt.show()
