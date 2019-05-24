@@ -108,9 +108,9 @@ def helice_circular_1():
     r = 5
     y = r * np.sin(t)
     x = r * np.cos(t)
-    ax.plot(x, y, z, 'b', lw=2)
-
-    # linea roja al centro de la helice circular
+    ax.plot(x, y, z, 'b', lw=2, label='Curva Hélice Circular')
+    ax.legend()
+    # linea ax.legend()oja al centro de la helice circular
     ax.plot((0, 0), (0, 0), (-t_max * 0.2, t_max * 1.2), color='r', lw=2)
 
     plt.show()
@@ -229,8 +229,38 @@ def conica_de_papus():
 
     pass
 def Curva_de_Arquitas():
-    # añadir sus códigos aca
-    pass
+    """""
+        Tipo de curva: Curva de Arquitas
+
+        Integrantes:
+        Nicolas Fernandez (@matiche)
+        Sebastian Mendez  (@SebaMendez)
+        Cristobal Moreira (@cmoreirab)
+        Gabriel Lara      (@Gabolara453)
+        Dennis Queirolo   (@dennis-queirolo)
+        :return: Curva de arquitas
+        """
+
+    plt.rcParams['legend.fontsize'] = 10
+
+    fig = plt.figure()
+    ax = fig.gca(projection='3d')
+
+    # Prepare arrays x, y, z
+    theta = np.linspace(-10 * np.pi, 10 * np.pi, 100)
+    a = 4
+    t = 10
+    z = a * ((1 - np.cos(theta)) * np.cos(theta)) - (np.pi / 2 <= t <= np.pi / 2)
+    z = - a * ((1 - np.cos(theta)) * np.cos(theta)) - (np.pi / 2 <= t <= np.pi / 2)
+    x = a * np.cos(theta) ** 2
+    y = a * np.cos(theta) * np.sin(theta)
+
+    ax.plot(x, y, z, label=('Curva de Arquitas'))
+    ax.legend()
+
+    plt.show()
+
+
 def horoptera():
     # añadir sus códigos aca
     pass
