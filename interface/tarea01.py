@@ -119,7 +119,29 @@ def Corona_Sinusoidal():
     # añadir sus códigos aca
     pass
 def curva_de_viviani():
-    # añadir sus códigos aca
+    """
+    Funcion que muestra una curva de viviani en una nueva ventana
+
+    Integrantes:
+    Levi Urbina
+    Natalia Valenzuela
+    Ricardo Vergara
+    Estefany Alarcon
+
+    return: curva_de_viviani
+    """
+
+    a = 1
+    t = np.linspace(-4, 4 * np.pi, 100)
+    x = a * (1 + np.cos(t))
+    y = a * np.sin(t)
+    z = 2 * a * np.sin(t / 2)
+
+    fig = plt.figure()
+    ax = fig.gca(projection='3d')
+    ax.set_title("Curva de viviani")
+    ax.plot(x, y, z, label="Curva de Viviani", lw=5)
+    plt.show()
     pass
 def hipopoda_1():
     # añadir sus códigos aca
@@ -228,7 +250,7 @@ if __name__ == '__main__':
     curva_de_ejemplo = tk.Button(master=frame, text="Corona Sinusoidal", command=Corona_Sinusoidal)
     curva_de_ejemplo.pack(side=tk.BOTTOM, padx=10, pady=10)
 
-    curva_de_ejemplo = tk.Button(master=frame, text="Curva de Viviani", command=curva_de_ejemplo)
+    curva_de_ejemplo = tk.Button(master=frame, text="Curva de Viviani", command=curva_de_viviani)
     curva_de_ejemplo.pack(side=tk.BOTTOM, padx=10, pady=10)
 
     curva_de_ejemplo = tk.Button(master=frame, text="Hipopoda", command=hipopoda_1)
