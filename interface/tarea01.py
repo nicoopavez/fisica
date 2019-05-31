@@ -278,6 +278,7 @@ def Curva_Bicilindrica():
     Greis Quezada              (@matakuri)
     Pedro Robles Fuentes       (PedroRobles)
 
+
     :return: Curva bicilindrica
     """
 
