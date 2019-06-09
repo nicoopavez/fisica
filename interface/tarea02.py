@@ -45,11 +45,11 @@ def bicilindrica():
 #Se da valor a las variables
 
     x1 = a*np.cos(theta)**2
-    y1 = np.sqrt(-(b*2 - (2*c + a(np.sin(theta))**2)))
+    y1 = np.sqrt(-(b*2 - (2*c + a*(np.sin(theta))**2)))
     z1 = - c+a*np.sin(theta)
     z = c+a*np.sin(theta)
     x = a*np.cos(theta)**2
-    y = np.sqrt(-(b*2 - (2*c + a(np.sin(theta))**2)))
+    y = np.sqrt(-(b*2 - (2*c + a*(np.sin(theta))**2)))
     N = 1000
     t= 10
 
@@ -58,7 +58,7 @@ def bicilindrica():
     def gen(N):
         for theta in np.linspace(-4 * np.pi, 4 * np.pi, 100):
             x = a*np.cos(theta)
-            y =  np.sqrt(-(b*2 - (2*c + a(np.sin(theta))**2)))
+            y =  np.sqrt(-(b*2 - (2*c + a*(np.sin(theta))**2)))
             z = c+a*np.sin(theta)
             yield np.array([x, y, z])
 
@@ -71,7 +71,7 @@ def bicilindrica():
     def gen1(N):
         for theta in np.linspace(-4 * np.pi, 4 * np.pi, 100):
             x1 = a*np.cos(theta)
-            y1 = np.sqrt(-(b*2 - (2*c + a(np.sin(theta))**2)))
+            y1 = np.sqrt(-(b*2 - (2*c + a*(np.sin(theta))**2)))
             z1 = - (c+a*np.sin(theta))
             yield np.array([x1, y1, z1])
 
