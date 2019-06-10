@@ -2,6 +2,7 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import animation
 import matplotlib.pyplot as plt
+import tkinter as tk
 
 fig = plt.figure()
 ax = fig.gca(projection='3d')
@@ -71,6 +72,7 @@ ax.set_zlabel('Z')
 ab.set_zlim3d([20.0, -10.0])
 ab.set_zlabel('Z')
 
+
 ani = animation.FuncAnimation(fig, update, N, fargs=(data, line), interval=10000 / N, blit=False)
 
 ani1 = animation.FuncAnimation(fig, update1, N, fargs=(data1, line1), interval=10000 / N, blit=False)
@@ -80,6 +82,10 @@ plt.show()
 
 
 
+Conica_im = tk.PhotoImage(file="curva_bicilindrica.gif")
+conica_button = tk.Button(master=frame, text="Hélice Cónica", command=hcurva_bicilindrica, image=bicilindrica_im)
+conica_button.pack(side=tk.BOTTOM, padx=10, pady=10)
+tk.mainloop()
 
 
 
